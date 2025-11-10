@@ -1,0 +1,24 @@
+{
+  "name": "fps-kit",
+  "version": "1.0.0",
+  "description": "FPS monitoring utilities with rafMeter and rafPatch",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "fps",
+    "performance",
+    "raf"
+  ],
+  "author": "yuchan",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
