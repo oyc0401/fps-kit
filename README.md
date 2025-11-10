@@ -1,17 +1,11 @@
-# fps-kit
+# fpskit
 
 웹 애플리케이션의 FPS 모니터링과 성능 최적화를 위한 경량 라이브러리
 
 ## 설치
 
 ```bash
-npm install fps-kit
-```
-
-GitHub에서 직접 설치:
-
-```bash
-npm install git+https://github.com/yuchan/fps-kit.git
+npm install fpskit
 ```
 
 ## 주요 기능
@@ -21,7 +15,7 @@ npm install git+https://github.com/yuchan/fps-kit.git
 실시간으로 FPS를 측정하고 모니터링할 수 있습니다.
 
 ```javascript
-import { startFpsMeter, stopFpsMeter } from "fps-kit";
+import { startFpsMeter, stopFpsMeter } from "fpskit";
 
 // FPS 측정 시작
 startFpsMeter((fps) => {
@@ -37,7 +31,7 @@ stopFpsMeter();
 `requestAnimationFrame`을 패치하여 특정 FPS로 제한할 수 있습니다.
 
 ```javascript
-import { enableRafPatch, disableRafPatch } from "fps-kit";
+import { enableRafPatch, disableRafPatch } from "fpskit";
 
 // 30fps로 제한
 enableRafPatch(30);
@@ -51,7 +45,7 @@ disableRafPatch();
 ### 기본 FPS 모니터링
 
 ```javascript
-import { startFpsMeter, stopFpsMeter } from "fps-kit";
+import { startFpsMeter, stopFpsMeter } from "fpskit";
 
 // FPS 표시용 엘리먼트
 const fpsDisplay = document.getElementById("fps-counter");
@@ -71,7 +65,7 @@ setTimeout(() => {
 완전한 타입 지원으로 안전한 개발이 가능합니다.
 
 ```typescript
-import { startFpsMeter, enableRafPatch } from "fps-kit";
+import { startFpsMeter, enableRafPatch } from "fpskit";
 
 interface PerformanceConfig {
   targetFps: number;
@@ -137,4 +131,4 @@ MIT
 
 ---
 
-만든이: **yuchan**
+만든이: **oyc0401**

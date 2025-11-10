@@ -1,5 +1,5 @@
 {
-  "name": "fps-kit",
+  "name": "fpskit",
   "version": "1.0.0",
   "description": "FPS monitoring utilities with rafMeter and rafPatch",
   "main": "dist/index.js",
@@ -16,7 +16,7 @@
     "performance",
     "raf"
   ],
-  "author": "yuchan",
+  "author": "oyc0401",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.2.2"
